@@ -24,11 +24,9 @@ const Body = ({ spotify }) => {
 			<div className="body__songs">
 				<div className="body__icons">
 					<PlayCircleFilledIcon className="body__shuffle" />
-					{/* onClick={playPlaylist} */}
 					<FavoriteIcon fontSize="large" />
 					<MoreHorizIcon />
 				</div>
-				{/* playSong={playSong} */}
 				{discover_weekly?.tracks.items.map((item) => (
 					<SongRow track={item.track} />
 				))}
